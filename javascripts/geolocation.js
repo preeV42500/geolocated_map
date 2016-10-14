@@ -46,11 +46,12 @@ var weather = {
     return {
       temp: this.temp(json.main.temp),
       description: json.weather[0].description,
-      location: json.name
+      location: json.name,
+      icon: json.cod
     };
   },
   render: function(json) {
-    this.$el.html(this.template(this.processData(json)));
+    this.$el.html(this.template(this.processData(json))).addClass("slide");
   }
 };
 

@@ -3,20 +3,22 @@
   <head>
     <title>Geolocated Map</title>
     <meta charset="utf-8"/>
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="stylesheets/geolocation.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="javascripts/handlebars-v3.0.0.js"></script>
   </head>
   <body>
     <main>
-      <div id="map"></div>
-      <div id="weather"></div>
+      <article>
+        <div id="map"><p>Getting geolocation......</p></div>
+        <div id="weather"></div>
+      </article>
     </main>
 
     <script id="weather_card" type="text/x-handlebars">
       <h2>{{location}}</h2>
       <h3>{{{temp}}}</h3>
-      <p>{{description}}</p>
+      <p><i class="owf owf-{{icon}}"></i> {{description}}</p>
     </script>
 
     <script src="javascripts/geolocation.js"></script>
