@@ -1,0 +1,1 @@
+To run this application, install the Node HTTP server module using `npm install http-server -g`. Start the server using `http-server`. The default port is 8080; the page can be viewed at http://localhost:8080. 
